@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,10 +21,11 @@ public class SeleniumExampleTest {
 	
 	@Before
 	public void setUp() {
-		File file = new File("libs/webdriver/linux/chromedriver");
-		// File file = new File("libs/webdriver/mac/chromedriver");
-		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-		setWebDriver(new ChromeDriver());
+		// File file = new File("libs/webdriver/chrome/linux/chromedriver");
+		// File file = new File("libs/webdriver/chrome/mac/chromedriver");
+		// System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		// setWebDriver(new ChromeDriver());
+		setWebDriver(new FirefoxDriver());
 	}
 	
 	@Test
