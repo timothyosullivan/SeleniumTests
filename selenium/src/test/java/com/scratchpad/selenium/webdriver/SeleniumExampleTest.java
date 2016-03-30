@@ -20,7 +20,7 @@ public class SeleniumExampleTest {
 	
 	@Before
 	public void setUp() {
-		File file = new File("/Users/timothyosullivan/Selenium/chromedriver");
+		File file = new File("libs/chromedriver");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 		setWebDriver(new ChromeDriver());
 	}
